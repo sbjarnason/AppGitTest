@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AppTestGit T1 ehf</title>
+	</head>
+	<body>
+		<button id="hnappur">Exec</button>
+		<button id="clean">Clean</button>
+		<div id="content">
+
+		</div>
+		<script src="js/zepto.js"></script>
+		<script src="js/AppGitTest.js"></script>
+		<script>
+			$('#hnappur').click(function(){
+				MyFunc.DoIt($("#content"));
+
+			});
+			$('#clean').click(function(){
+				$("#content").html('');
+			});
+		</script>
+	</body>
+</html>
